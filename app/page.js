@@ -324,7 +324,7 @@ export default function Home() {
           <div className="border-t border-stone-200">
             {services.map((srv, i) => (
               <Reveal key={srv.nom} delay={i * 80}>
-                <div className="service-row group cursor-pointer border-b border-stone-200 py-8 px-4 grid grid-cols-12 gap-4 items-center">
+                <a href="#contact" className="service-row group cursor-pointer border-b border-stone-200 py-8 px-4 grid grid-cols-12 gap-4 items-center">
                   <div className="col-span-1 display text-3xl font-light text-stone-300">0{i+1}</div>
                   <div className="col-span-5">
                     <h3 className="display text-3xl font-light mb-1">{srv.nom}</h3>
@@ -335,7 +335,7 @@ export default function Home() {
                     <span className="display text-3xl">{srv.prix}<span className="text-lg text-stone-400 ml-1">EUR</span></span>
                   </div>
                   <div className="col-span-1 text-right service-arrow display text-2xl text-[#b48c64]">&#8594;</div>
-                </div>
+                </a>
               </Reveal>
             ))}
           </div>
